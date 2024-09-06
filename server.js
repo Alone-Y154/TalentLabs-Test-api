@@ -1,8 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
-const authRoutes = require('./routes/authRoutes');
-const courseRoutes = require('./routes/courseRoutes');
+const authRoutes = require('./api/routes/authRoutes');
+const courseRoutes = require('./api/routes/courseRoutes');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 
@@ -28,9 +28,10 @@ app.post('/validate-token', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 
-app.get('/',(req,res) => {
-  res.send("server is running");
+app.get('*',(req,res,next)=>{
+  res.status(200).json({
+    message:'bad request'
+  })
 })
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

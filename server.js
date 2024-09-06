@@ -28,7 +28,7 @@ app.post('/validate-token', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 
-app.use('/',(req,res) => {
+app.get('/',(req,res) => {
   res.send("server is running");
 })
 

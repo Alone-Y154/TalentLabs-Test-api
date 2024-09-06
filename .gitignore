@@ -1,0 +1,110 @@
+# Node modules directory
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.bak
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Operating system files
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+
+# Editor directories and files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
+
+# NPM package lock files
+package-lock.json
+yarn.lock
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Bower dependency directory (https://bower.io)
+bower_components/
+
+# dotenv environment variable files
+.env
+.env.*.local
+.env.local
+.env.*.local
+
+# Mac system files
+*.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# IDE files
+*.idea
+*.vscode
+*.project
+*.classpath
+*.cproject
+*.settings/
+*.factorypath
+
+# Compiled Java classes
+*.class
+
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.o
+*.obj
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Environment files
+.env
+.env.local
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# NPM package log
+npm-debug.log*
+
+# Yarn Integrity file
+.yarn-integrity

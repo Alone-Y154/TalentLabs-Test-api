@@ -28,9 +28,10 @@ app.post('/validate-token', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 
-app.get('/',(req,res) => {
-  res.send("server is running");
-})
+app.use((req, res) => {
+  res.status(404).send("Resource not found");
+});
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
